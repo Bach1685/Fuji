@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  
+  nav,
+  footer,
+  header {
+    display: block;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%; 
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  
+  img {
+    vertical-align: top;
+  }
+
+  body {
+    background: url(/source/img/background-6650672_1280.jpg);
+    background-size: cover; 
+  }
+
+  header {
+      height: 100px;
+      width: 100%;
+      background: url('/source/img/444481.png') right /135px 33px no-repeat, black;
+
+    }
+  .fujifilm{
+      width: 135px;
+      height: 33px;
+      size: 135;
+  }
+
+  nav{
+    /* display: flex; */
+  }
+
+  main{
+      margin: auto;
+  }
+
+  first-two{
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+  }
+  second-two{
+    display: flex;
+    flex-direction: column;
+    max-width: 660px;
+
+  }
+  
+
+  .card{
+      width: 320px;
+      height: 320px;
+      background: black;
+      margin: 10px;
+  }
