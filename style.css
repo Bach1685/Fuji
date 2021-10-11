@@ -47,14 +47,14 @@
 
   @font-face {
     font-family: "FujiyamaLight";
-    src: url("/source/fonts/Lobster-Regular.ttf") format("truetype");
+    src: url("source/fonts/Lobster-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
   }
 
   @font-face {
     font-family: "exo";
-    src: url("/source/fonts/static/Exo2-Bold.ttf") format("truetype");
+    src: url("source/fonts/static/Exo2-Bold.ttf") format("truetype");
     /* src: url("/source/fonts/Exo2-VariableFont_wght.ttf") format("truetype"); */
     
     font-style: normal;
@@ -63,7 +63,7 @@
 
   @font-face {
     font-family: "exoBlack";
-    src: url("/source/fonts/FiraSans-Light.ttf") format("truetype");
+    src: url("source/fonts/FiraSans-Light.ttf") format("truetype");
     /* src: url("/source/fonts/Exo2-VariableFont_wght.ttf") format("truetype"); */
     
     font-style: normal;
@@ -72,7 +72,7 @@
 
   @font-face {
     font-family: "FiraSansCondensed";
-    src: url("/source/fonts/FiraSansCondensed-Regular.ttf") format("truetype");
+    src: url("source/fonts/FiraSansCondensed-Regular.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
   }
@@ -94,7 +94,7 @@
       height: 100px;
       width: 100%;
 
-      background: url('/source/img/444481.png') right /135px 33px no-repeat, black;
+      background: url('source/img/444481.png') right /135px 33px no-repeat, black;
   }
   .contacts-and-about-us {
     /* display: flex; */
