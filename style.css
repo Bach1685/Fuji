@@ -31,6 +31,20 @@
     text-decoration: none;
   }
 
+  
+  @media (max-width: 10000px) {
+    .card {
+      width: 320px;
+      height: 320px;
+    }
+
+    @media (max-width: 400px) {
+      .card {
+        width: 160px;
+        height: 160px;
+      }
+    }
+
   @font-face {
     font-family: "FujiyamaLight";
     src: url("/source/fonts/Lobster-Regular.ttf") format("truetype");
@@ -62,6 +76,7 @@
     font-style: normal;
     font-weight: normal;
   }
+
   html {
     scroll-behavior: smooth; /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */ 
   }
@@ -134,8 +149,8 @@
     }
   
   .card{
-      width: 320px;
-      height: 320px;
+      /* width: 320px;
+      height: 320px; */
       background: black;
       margin: auto;
   border-radius: 1%;
