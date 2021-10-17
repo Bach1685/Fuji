@@ -59,6 +59,7 @@
       .menu {
         padding-top: 10px;
         display: flex;
+
       }
 
       .burger {
@@ -70,11 +71,15 @@
     @media (max-width: 490px) {
       .burger {
         display: block;
-
       }
       .menu {
-        display: none;
+        /* display: none; */
         flex-direction: column;
+        overflow-y: hidden;
+        transition: 0.5s;
+        left: -490px;
+        background-color: black;
+        height: 300px;
       }
     }
 
@@ -148,6 +153,8 @@
     padding-left: 60px;
     gap: 10px;
     margin-right: 150px;
+    position: absolute;
+
   }
   .menu a{
     display: block;
@@ -171,7 +178,7 @@
       /* background-color: rgb(32, 30, 27); */
       max-width: 800px;
       /* height: 1800px;  */
-    font-family: "exoBlack";
+      font-family: "exoBlack";
 
     }
 
