@@ -92,6 +92,18 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    
+
+  }
+  .menu a{
+    display: block;
+    color: white;
+  }
+
+  .cross-menu{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     max-width: 1000px;
     font-family: "exo";
     font-size: 20px;
@@ -99,11 +111,13 @@
     gap: 10px;
     margin-right: 150px;
     position: absolute;
-
   }
-  .menu a{
-    display: block;
-    color: white;
+
+  .cross {
+    width: 20px;
+    height: 20px;
+    filter: invert(1);
+    display: none;
   }
 
   main{
@@ -174,13 +188,16 @@
       .burger {
         display: block;
       }
-      
-      .menu {
-        flex-direction: column;
+
+      .cross-menu {
         overflow-y: hidden;
         transition: 0.5s;
         left: -490px;
-        background-color: black;
         height: 300px;
+      }
+
+      .menu {
+        flex-direction: column;
+        background-color: black;
       }
     }
