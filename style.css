@@ -31,59 +31,12 @@
     text-decoration: none;
   }
 
-  
-  @media (max-width: 10000px) {
-    .menu {
-      padding-top: 40px;
-      /* height: 320px; */
-      display: flex;
-
-    }
-    .burger {
-      display: none;
-
-    }
-
-    @media (max-width: 930px) {
-      .menu {
-        padding-top: 20px;
-        display: flex;
-
-      }
-      .burger {
-        display: none;
-
-      }
-    }
-    @media (max-width: 564px) {
-      .menu {
-        padding-top: 10px;
-        display: flex;
-
-      }
-
-      .burger {
-        display: none;
-
-      }
-    }
-    
-    @media (max-width: 490px) {
-      .burger {
-        display: block;
-      }
-      .menu {
-        /* display: none; */
-        flex-direction: column;
-        overflow-y: hidden;
-        transition: 0.5s;
-        left: -490px;
-        background-color: black;
-        height: 300px;
-      }
-    }
-
-
+  .burger {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    display: none;
+  }
 
   @font-face {
     font-family: "FujiyamaLight";
@@ -127,24 +80,16 @@
   body {
     background: url(source/img/background-6650672_1280.jpg);
     background-size: cover; 
-  /* font-family: "FujiyamaLight"; */
   }
 
   header {
       height: 100px;
       width: 100%;
-
       background: url('source/img/444481.png') right /135px 33px no-repeat, black;
   }
 
-  .burger {
-    width: 30px;
-    height: 30px;
-    filter: invert(1);
-
-  }
-
   .menu {
+    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1000px;
@@ -158,53 +103,16 @@
   }
   .menu a{
     display: block;
-    /* padding-top: 20px; */
     color: white;
   }
-/* 
-    .contacts {
-      color: white;
-      font-size: 20px;
-      max-width: 400px; 
-      flex-wrap: wrap;
-      padding-top: 20px;
-      padding-left: 50px;
 
-    } */
-
-    main{
+  main{
       margin: auto;
       margin-top: 10px;
-      /* background-color: rgb(32, 30, 27); */
       max-width: 800px;
-      /* height: 1800px;  */
       font-family: "exoBlack";
-
-    }
-
-    .cards{
-      /* background-color: rgb(241, 147, 7); */
-      max-width: 100%;
-      min-height: 400px;
-      display: flex;
-      justify-content: space-between;
-    flex-wrap: wrap;
-
-    }
-  
-  .card{
-      /* width: 320px;
-      height: 320px; */
-      background: black;
-      margin: auto;
-  border-radius: 1%;
-  color: white;
-  font-size: 40px;
-  text-align: center;
-  font-family: "FujiyamaLight";
-
-
   }
+
   .text-in-card{
     margin-top: 100px;
   }
@@ -224,22 +132,9 @@
     color: white;
     
   }
+
   h2{
     margin-bottom: 30px;
-  }
-
-  .print {
-  }
-
-  
-  .polygraphy {
-  }
-
-  .accessories {
-  }
-
-  .contacts {
-    /* padding-left: 200px; */
   }
 
   footer{
@@ -247,12 +142,45 @@
     width: 100%;
     background-color: black;
     color: white;
-font-size: 15px;
+    font-size: 15px;
     font-family: "exoBlack";
-
   }
+
   footer p {
     margin: auto;
     padding-top: 50px;
     width: 100px;
   }
+
+  @media (max-width: 10000px) {
+    .menu {
+      padding-top: 40px;
+    }
+  }
+
+    @media (max-width: 930px) {
+      .menu {
+        padding-top: 20px;
+      }
+    }
+
+    @media (max-width: 564px) {
+      .menu {
+        padding-top: 10px;
+      }
+    }
+    
+    @media (max-width: 490px) {
+      .burger {
+        display: block;
+      }
+      
+      .menu {
+        flex-direction: column;
+        overflow-y: hidden;
+        transition: 0.5s;
+        left: -490px;
+        background-color: black;
+        height: 300px;
+      }
+    }
