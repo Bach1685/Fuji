@@ -31,13 +31,6 @@
     text-decoration: none;
   }
 
-  .burger {
-    width: 30px;
-    height: 30px;
-    filter: invert(1);
-    display: none;
-  }
-
   @font-face {
     font-family: "FujiyamaLight";
     src: url("source/fonts/Lobster-Regular.ttf") format("truetype");
@@ -88,12 +81,21 @@
       background: url('source/img/444481.png') right /135px 33px no-repeat, black;
   }
 
+  .burger {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
+    display: none;
+    padding-top: 35px;
+    padding-left: 20px;
+  }
+
   .menu {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    
-
+    gap: 10px;
+    max-width: 1000px;
   }
   .menu a{
     display: block;
@@ -104,20 +106,22 @@
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
     font-family: "exo";
     font-size: 20px;
     padding-left: 60px;
-    gap: 10px;
     margin-right: 150px;
     position: absolute;
+    background-color: black;
   }
 
   .cross {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     filter: invert(1);
-    display: none;
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: 10px;
   }
 
   main{
@@ -194,10 +198,19 @@
         transition: 0.5s;
         left: -490px;
         height: 300px;
+        top: 0;
+      }
+
+      .cross {
+    display: block;
       }
 
       .menu {
         flex-direction: column;
         background-color: black;
+        display: flex;
+        padding-left: 10px;
+        padding-top: 60px;
+        /* width: 100px; */
       }
     }
