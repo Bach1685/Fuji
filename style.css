@@ -94,7 +94,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     max-width: 1000px;
   }
   .menu a{
@@ -118,7 +118,7 @@
     width: 40px;
     height: 40px;
     filter: invert(1);
-    display: block;
+    display: none;
     position: absolute;
     right: 0px;
     top: 10px;
@@ -197,12 +197,16 @@
         overflow-y: hidden;
         transition: 0.5s;
         left: -490px;
-        height: 300px;
+        /* height: 300px; */
+        width: 250px;
         top: 0;
+        padding-left: 0px;
+        padding-bottom: 50px;
+        border-bottom-right-radius: 40px;
       }
 
       .cross {
-    display: block;
+      display: block;
       }
 
       .menu {
