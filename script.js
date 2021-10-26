@@ -16,4 +16,18 @@ Array.from(document.getElementsByClassName('close-menu'))
         });
 });
 
+// window.onscroll = function() {scrollFunction()};
+
+// function scrollFunction() {
+//     let headerStyle = document.getElementById("header").style;
+//     let menuStyle = document.getElementById("cross-menu").style;
+//   if (document.body.scrollTop > 50 
+//     || document.documentElement.scrollTop > 50) {
+//         menuStyle.height = "50px";
+//         headerStyle.height = menuStyle.height;
+//   } else {
+//     headerStyle.height = "100px";
+//   }
+// }
+
 
