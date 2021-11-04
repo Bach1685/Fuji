@@ -72,19 +72,14 @@
   }
 
   body {
-    background: url(source/img/background-6650672_1280.jpg);
     background-size: cover; 
   }
 
   header {
-      height: 100px;
+      height: 120px;
       width: 100%;
       background: black;
-      /* background: url('source/img/444481.png') right /135px 33px no-repeat, black; */
-      /* position: fixed; */
       top: 0px;
-      /* transition: 0.2s; */
-      display: flex;
     }
 
   .burger {
@@ -113,22 +108,29 @@
 
 .logo{
   color: white;
-  top: 20px;
+  top: 10px;
   right: 120px;
   position: absolute;
   width: 50px;
   font-family: "exo";
-
 }
 
-  .cross-menu{
+.logo-adress{
+  color: rgb(129, 129, 129);
+  top: 80px;
+  right: 20px;
+  position: absolute;
+  font-family: "exo";
+}
+
+  .cross-and-menu{
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     font-family: "exo";
     font-size: 20px;
     padding-left: 60px;
-    margin-right: 150px;
+    margin-right: 300px;
     position: absolute;
     background-color: black;
   }
@@ -145,9 +147,7 @@
 
   main{
       margin: auto;
-      /* margin-top: 10px; */
-      /* max-width: 800px; */
-      font-family: "exoBlack";
+      font-family: "exo";
   }
 
   .text-in-card{
@@ -162,14 +162,55 @@
 
   .block {
     width: 100%;
-    height: 500px;
+    min-height: 500px;
     font-size: 20px;
-    background-color: rgba(0, 0, 0, 0.9);
     /* margin-bottom: 10px; */
     color: white;
-    max-width: 800px;
-    margin: auto;
-    
+    /* max-width: 800px; */
+    margin: auto;  
+  }
+
+  .block h2{
+    margin-left: 200px;
+  }
+
+  .block p{
+    margin-left: 200px;
+
+  }
+
+  .about-us{
+    background-color: rgb(97, 2, 2);
+  }
+
+  .photo-for-documents{
+    background-color: rgba(0, 80, 20, 1.0);
+  }
+
+  table{
+    text-align: center;
+  margin: auto;
+  border: 10px;
+  border-color: white;
+  background-color: rgb(82, 0, 0);
+  border-radius: 10px;
+}
+
+  .print{
+    background-color: rgba(136, 2, 2, 1.0);
+  }
+
+  .polygraphy{
+    background-color: rgba(0, 80, 20, 1.0);
+  }
+
+  .accessories{
+    background-color: rgba(136, 2, 2, 1.0);
+  }
+
+  .contacts{
+    background-color: rgba(0, 80, 20, 1.0);
+
   }
 
   h2{
@@ -208,7 +249,7 @@
       .menu {
         padding-top: 10px;
       }
-      .cross-menu{
+      .cross-and-menu{
         position: fixed;
       }
     }
@@ -218,7 +259,7 @@
         display: block;
       }
 
-      .cross-menu {
+      .cross-and-menu{
         overflow-y: hidden;
         transition: 0.5s;
         left: -490px;
