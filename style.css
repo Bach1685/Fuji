@@ -158,6 +158,7 @@
     width: 100%;
     height: 500px;
     font-size: 20px;
+    background-color: rgb(97, 2, 2);
   }
 
   .block {
@@ -179,21 +180,51 @@
 
   }
 
-  .about-us{
-    background-color: rgb(97, 2, 2);
-  }
-
   .photo-for-documents{
-    background-color: rgba(0, 80, 20, 1.0);
+    /* background-color: rgba(0, 80, 20, 1.0); */
+    background: url(source/img/2RoHsAd.jpeg) 0 0/ cover no-repeat;
+  }
+  .photo-for-documents-text{
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 
-  table{
-    text-align: center;
+  .photo-for-documents-img{
+    position: absolute;
+    top: 120px;
+    z-index: 3;
+    filter: brightness(0.15);
+    /* width: 100%; 
+    height: 100%; 
+    object-fit: cover; */
+  }
+
+  .cost-table{
+  text-align: center;
   margin: auto;
-  border: 10px;
-  border-color: white;
-  background-color: rgb(82, 0, 0);
+  /* border: 10px solid rgb(12, 11, 11); */
+  /* background-color: rgb(2, 49, 0); */
+  /* background-position: center; */
   border-radius: 10px;
+  border-collapse: collapse;
+  min-width: 440px;
+  height: 300px;
+  /* position: relative; */
+  /* top: 40px; */
+  /* z-index: 4; */
+
+}
+
+.service{
+  height: 100px;
+  min-width: 500px;
+}
+.cost-table th {
+  /* border: 1px solid rgb(0, 0, 0); */
+}
+/* границы ячеек тела таблицы */
+.cost-table td {
+  /* border: 1px solid rgb(0, 0, 0); */
 }
 
   .print{
@@ -215,7 +246,7 @@
 
   h2{
     margin-bottom: 30px;
-    font-size: 80px;
+    font-size: 70px;
   }
 
   footer{
