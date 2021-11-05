@@ -170,6 +170,9 @@
     /* max-width: 800px; */
     margin: auto;  
   }
+  .block p{
+    max-width: 1000px;
+  }
 
   .block h2{
     margin-left: 200px;
@@ -228,7 +231,7 @@
 }
 
   .print{
-    background-color: rgba(136, 2, 2, 1.0);
+    background: url(source/img/Ipr3Gpd.jpeg) 0 0/ cover no-repeat;
   }
 
   .polygraphy{
