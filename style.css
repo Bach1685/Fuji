@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /* -------- */
 
 element {
-  --px1300-coeff: 0.8;
+  --size-coeff: 1;
 }
 
 
@@ -137,186 +137,60 @@ html {
   }
 
   .about-us-content{
-    max-width: 1400px;
+    max-width: calc(1400px  * var(--size-coeff));
     /* min-height: 916px; */
     margin: auto;
     display: flex;
-    padding: 20px;
+    padding: calc(20px  * var(--size-coeff));
     /* justify-content: space-between; */
   }
 
   .about-us-content-main{
-    max-width: 842px;
-    min-height: 556px;
-    margin-top: 190px;
+    max-width: calc(842px  * var(--size-coeff));
+    min-height: calc(556px  * var(--size-coeff));
+    margin-top: calc(190px  * var(--size-coeff));
   }
   .about-us-content-main p {
-    margin-bottom: 50px;
+    margin-bottom: calc(50px  * var(--size-coeff));
   }
   .text1{
     font-family: "Montserrat-Black";
-    font-size: 64px;
-    line-height: 75px;
+    font-size: calc(64px * var(--size-coeff));
+    line-height: calc(75px  * var(--size-coeff));
     /* margin-bottom: 50px; */
   }
   .text2{
     font-family: "Montserrat-Regular";
-    font-size: 30px;
-    line-height: 45px;
+    font-size: calc(30px  * var(--size-coeff));
+    line-height: calc(45px  * var(--size-coeff));
   }
 
   .services-view{
     display: block;
-    width: 300px;
-    height: 75px;
+    width: calc(300px * var(--size-coeff));
+    height: calc(75px * var(--size-coeff));
     background: #AD00FF;
     font-family: "Montserrat-Bold";
-    font-size: 30px;
+    font-size: calc(30px * var(--size-coeff));
     color: white;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
-    line-height: 75px;
-    border-radius: 76px;
-    margin-left: 125px;
+    line-height: calc(75px * var(--size-coeff));
+    border-radius: calc(76px * var(--size-coeff));
+    margin-left: calc(125px * var(--size-coeff));
   }
 
   .about-us-img{
     /* position: relative; */
     display: block;
     /* right: -100px; */
-    max-width: 650px;
-    height: 910px;
+    max-width: calc(650px * var(--size-coeff));
+    height: calc(910px * var(--size-coeff));
     /* margin-right: -75px; */
   }
 
-  .about-us-img-1070{
-    display: none;
-  }
-
-  .about-us-img-885{
-    display: none;
-  }
-
-
-   @media (max-width: 1300px) {
-     /* Коэффициент 0.8 на первоначальные */
-    .about-us-img{
-      max-width: 520px;
-      height: 728px;
-    }
-
-    .about-us-content-main{
-      margin-top: 152px;
-    }
-
-    .text1{
-      font-family: "Montserrat-Black";
-      font-size: 52px;
-      line-height: 60px;
-      /* margin-bottom: 50px; */
-    }
-    .text2{
-      font-family: "Montserrat-Regular";
-      font-size: 24px;
-      line-height: 36px;
-    }
-
-    .services-view{
-      display: block;
-      width: 240px;
-      height: 60px;
-      background: #AD00FF;
-      font-family: "Montserrat-Bold";
-      font-size: 24px;
-      color: white;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;
-      line-height: 60px;
-      border-radius: 61px;
-      margin-left: 100px;
-    }
-  }
-
-  @media (max-width: 1600px) {
-    /* Коэффициент 0.8 на первоначальные */
-   .about-us-img{
-     max-width: 520px;
-     height: 728px;
-   }
-
-   .about-us-content-main{
-     margin-top: 152px;
-   }
-
-   .text1{
-     font-family: "Montserrat-Black";
-     font-size: 52px;
-     line-height: 60px;
-     /* margin-bottom: 50px; */
-   }
-   .text2{
-     font-family: "Montserrat-Regular";
-     font-size: 24px;
-     line-height: 36px;
-   }
-
-   .services-view{
-     display: block;
-     width: 240px;
-     height: 60px;
-     background: #AD00FF;
-     font-family: "Montserrat-Bold";
-     font-size: 24px;
-     color: white;
-     text-align: center;
-     white-space: nowrap;
-     overflow: hidden;
-     line-height: 60px;
-     border-radius: 61px;
-     margin-left: 100px;
-   }
- }
-
-
-  @media (max-width: 768px) {
-    .about-us-img{
-      display: none;  
-      max-width: 289px;
-      height: 404px;
-    }
-
-    .about-us-img-1070{
-      display: none;
-    }
-
-    .about-us-img-885{
-      display: block;
-      max-width: 650px;
-      height: 910px;
-    }
-
-    .about-us-content-main{
-      margin-top: 40px;
-    }
-
-    .text1{
-      font-family: "Montserrat-Black";
-      font-size: 45px;
-      line-height: 55px;
-      /* margin-bottom: 50px; */
-    }
-    .text2{
-      font-family: "Montserrat-Regular";
-      font-size: 20px;
-      line-height: 35px;
-    }
-
-    .about-us-img{
-      display: block;
-    }
-  }
+  
 
 
 
