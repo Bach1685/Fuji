@@ -1,11 +1,10 @@
 const screenWidth = window.innerWidth;
-console.log(screenWidth);
+console.log(String(1920/screenWidth));
 
-if(screenWidth < 1540){
-  document.documentElement.style.setProperty("--size-coeff", "0.7");
+if(screenWidth >= 1300){
+  document.documentElement.style.setProperty("--size-coeff", String(screenWidth/1920));
 } else{
-  document.documentElement.style.setProperty("--size-coeff", "1");
-
+  document.documentElement.style.setProperty("--size-coeff", String(screenWidth/1300));
 }
 
 
