@@ -276,22 +276,38 @@ a:visited {
   height: calc(450px * var(--size-coeff));
   position: relative;
   margin: auto;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(20px * var(--size-coeff));
+  
 }
 
 .card-img{
   width: calc(330px * var(--size-coeff));
   height: calc(450px * var(--size-coeff));
-
 }
 
 .card-text{
+  width: calc(321px * var(--size-coeff));
+  height: calc(143px * var(--size-coeff));
+  /* background: chartreuse; */
   position: absolute;
-  bottom: calc(10px * var(--size-coeff));
+  bottom: calc(5px * var(--size-coeff));
   text-align: center;
-  left: calc(45px * var(--size-coeff));
+  /* left: calc(45px * var(--size-coeff)); */
   font-family: "MarckScript-Regular";
   font-size: calc(36px * var(--size-coeff));
+}
+
+.card-text p {
+  line-height: calc(30px * var(--size-coeff));
+}
+
+.print{
+  background: #E4A972;
+
 }
 
 
