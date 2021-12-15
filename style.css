@@ -106,8 +106,16 @@ h6 {
 }
 
 @font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("source/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
   font-family: "MarckScript-Regular";
-  src: url("source/fonts/Marck_Script/MarckScript-Regular.ttf") format("truetype");
+  src: url("source/fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
   font-style: normal;
   font-weight: normal;
 }
@@ -234,35 +242,34 @@ a:visited {
   height: calc(910px * var(--size-coeff));
 }
 
-.photo-for-documents{
-  background: #BD87E7;
+.photo-for-documents {
+  background: #bd87e7;
 }
 
-.block{
+.block {
   min-height: calc(1230px * var(--size-coeff));
 }
 
-.block-content{
+.block-content {
   max-width: calc(var(--total-width) * var(--size-coeff));
   min-height: 1186px;
   margin: auto;
   padding: 50px 20px;
 }
 
-.block-content-title{
+.block-content-title {
   font-family: "Montserrat-Black";
   font-size: calc(64px * var(--size-coeff));
   text-align: center;
 }
 
-.block-content-text{
+.block-content-text {
   font-family: "Montserrat-Regular";
   font-size: calc(36px * var(--size-coeff));
   text-align: center;
-
 }
 
-.cards{
+.photo-for-documents-cards {
   display: flex;
   /* justify-content: space-between; */
   flex-wrap: wrap;
@@ -271,7 +278,7 @@ a:visited {
   height: 100%;
 }
 
-.card{
+.photo-for-documents-card {
   width: calc(330px * var(--size-coeff));
   height: calc(450px * var(--size-coeff));
   position: relative;
@@ -281,15 +288,14 @@ a:visited {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: calc(20px * var(--size-coeff));
-  
 }
 
-.card-img{
+.photo-for-documents-card-img {
   width: calc(330px * var(--size-coeff));
   height: calc(450px * var(--size-coeff));
 }
 
-.card-text{
+.photo-for-documents-card-text {
   width: calc(321px * var(--size-coeff));
   height: calc(143px * var(--size-coeff));
   /* background: chartreuse; */
@@ -301,14 +307,123 @@ a:visited {
   font-size: calc(36px * var(--size-coeff));
 }
 
-.card-text p {
+.photo-for-documents-card-text p {
   line-height: calc(30px * var(--size-coeff));
 }
 
-.print{
-  background: #E4A972;
-
+.print {
+  background: #e4a972;
 }
 
+.print-content-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(20px * var(--size-coeff));
+  /* background: chartreuse; */
+  padding-top: 50px;
+}
 
+.print-content-top-text {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  max-width: 720px;
+  min-height: 460px;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-left: 50px;
+  /* text-align: justify; */
+  /* background: chartreuse; */
+}
 
+.print-content-top-card {
+  width: calc(570px * var(--size-coeff));
+  height: calc(690px * var(--size-coeff));
+  position: relative;
+  transform: rotate(5deg);
+}
+
+.print-content-top-card-img {
+  width: calc(570px * var(--size-coeff));
+  height: calc(690px * var(--size-coeff));
+}
+
+.print-content-top-card-text {
+  width: calc(477px * var(--size-coeff));
+  height: calc(95px * var(--size-coeff));
+  position: absolute;
+  bottom: calc(35px * var(--size-coeff));
+  left: calc(45px * var(--size-coeff));
+  font-family: "MarckScript-Regular";
+  font-size: calc(50px * var(--size-coeff));
+}
+
+.print-content-top-card-text p {
+  line-height: calc(50px * var(--size-coeff));
+}
+
+.print-content-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(20px * var(--size-coeff));
+  /* background: chartreuse; */
+  padding-top: 50px;
+}
+
+.print-content-bottom-text {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  max-width: 720px;
+  min-height: 460px;
+  line-height: 40px;
+  padding-top: 50px;
+  padding-left: 50px;
+  /* text-align: justify; */
+  /* background: chartreuse; */
+}
+
+.print-content-bottom-text span {
+  font-family: "Montserrat-SemiBold";
+}
+
+.print-content-bottom-card {
+  width: calc(570px * var(--size-coeff));
+  height: calc(690px * var(--size-coeff));
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+.print-content-bottom-card-img {
+  width: calc(570px * var(--size-coeff));
+  height: calc(690px * var(--size-coeff));
+}
+
+.print-content-bottom-card-text {
+  width: calc(477px * var(--size-coeff));
+  height: calc(95px * var(--size-coeff));
+  position: absolute;
+  bottom: calc(35px * var(--size-coeff));
+  left: calc(45px * var(--size-coeff));
+  font-family: "MarckScript-Regular";
+  font-size: calc(50px * var(--size-coeff));
+}
+
+.print-content-bottom-card-text p {
+  line-height: calc(50px * var(--size-coeff));
+}
+
+.recovery{
+  background: #DB8181;
+}
+
+.recovery-img{
+  margin: auto;
+  display: block;
+}
+
+.polygraphy{
+  background: #56BC97;
+}
