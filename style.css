@@ -486,11 +486,9 @@ a:visited {
 .accessories-card-text {
   width: 100%;
   height: calc(100px * var(--size-coeff));
-  /* background: chartreuse; */
   position: absolute;
   bottom: calc(1px * var(--size-coeff));
   text-align: center;
-  /* left: calc(45px * var(--size-coeff)); */
   font-family: "MarckScript-Regular";
   font-size: calc(50px * var(--size-coeff));
 }
@@ -505,7 +503,7 @@ a:visited {
 }
 
 .contacts-row {
-    padding-bottom: calc(20px * var(--size-coeff));
+  padding-bottom: calc(20px * var(--size-coeff));
 }
 
 .contacts-img {
@@ -526,8 +524,6 @@ a:visited {
   height: calc(700px * var(--size-coeff));
 }
 
-
-
 .contacts-text {
   font-size: calc(36px * var(--size-coeff));
   font-family: "Montserrat-Regular";
@@ -535,21 +531,35 @@ a:visited {
 }
 
 .contacts-card img {
-    display: inline-block;
-    width: calc(600px * var(--size-coeff));
-    height: calc(700px * var(--size-coeff));
-  }
+  display: block;
+  width: calc(600px * var(--size-coeff));
+  height: calc(700px * var(--size-coeff));
+}
 
 .contacts-card-text {
-  width: 200px;
-  /* width: 20px; */
-  line-height: calc(40px * var(--size-coeff));
-  height: calc(120px * var(--size-coeff));
-  /* background: chartreuse; */
+  width: calc(580px * var(--size-coeff));
+  height: calc(150px * var(--size-coeff));
   position: absolute;
-  bottom: calc(5px * var(--size-coeff));
-  text-align: center;
-  /* left: calc(45px * var(--size-coeff)); */
+  /* background: #56bc97; */
   font-family: "MarckScript-Regular";
   font-size: calc(50px * var(--size-coeff));
+  bottom: calc(20px * var(--size-coeff));
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer {
+  width: 100%;
+  height: calc(100px * var(--size-coeff));
+  background: black;
+}
+
+footer p {
+  color: white;
+  font-size: calc(20px * var(--size-coeff));
+  font-family: "Montserrat-Regular";
+  margin: auto;
+  /* background: wheat; */
+  text-align: center;
+  line-height: 80px;
 }
