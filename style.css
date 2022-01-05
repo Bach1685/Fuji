@@ -146,23 +146,23 @@ header {
 
 .header-content {
   max-width: calc(var(--total-width) * var(--size-coeff));
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: calc(20px * var(--size-coeff));
-  margin: auto;
   position: relative;
   top: 10%;
+  margin: auto;
+  padding: 0 20px;
 }
 
 .menu {
-  width: calc(1010px * var(--size-coeff));
+  max-width: calc(1010px * var(--size-coeff));
   height: calc(50px * var(--size-coeff));
   display: flex;
   justify-content: space-between;
   font-family: "Montserrat-Bold";
   font-size: calc(18px * var(--size-coeff));
-  margin-top: calc(20px * var(--size-coeff));
+  padding-top: calc(20px * var(--size-coeff));
+  margin-right: 200px;
+  gap: 20px;
+
   /* flex-wrap: wrap; */
 }
 
@@ -176,6 +176,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 10px;
 }
 
 .menu div a {
@@ -183,6 +184,9 @@ a:visited {
 }
 
 .logo {
+  position: absolute;
+  right: 0px;
+  top: 0px;
   width: calc(180px * var(--size-coeff));
   height: calc(90px * var(--size-coeff));
   display: flex;
