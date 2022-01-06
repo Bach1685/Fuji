@@ -142,7 +142,6 @@ header {
   width: 100%;
   background: black;
   top: 0px;
-  z-index: 100;
 }
 
 .header-content {
@@ -196,6 +195,8 @@ a:visited {
   left: -300px;
   transition: 0.5s;
   border-bottom-right-radius: 40px;
+  z-index: 1;
+
 }
 
 .burger-img {
@@ -204,6 +205,7 @@ a:visited {
   width: 40px;
   height: 40px;
   position: fixed;
+  z-index: 1;
 }
 
 .burger-cross {
@@ -420,7 +422,6 @@ a:visited {
 .print-content-top-card-img {
   width: calc(570px * var(--size-coeff));
   height: calc(690px * var(--size-coeff));
-  /* z-index: 10; */
 }
 
 .print-content-top-card-text {
