@@ -740,6 +740,10 @@ footer p {
     }
     .about-us-mobile{
         display: block;
-        
     }
+
+    .recovery-img {
+        max-width: calc(600px * var(--size-coeff));
+        /* max-height: calc(815px * var(--size-coeff)); */
+      }
 }
