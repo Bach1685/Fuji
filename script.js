@@ -18,6 +18,8 @@ if (currentScreenWidth >= borderScreenWidth) {
     "--size-coeff",
     String(currentScreenWidth / startScreenWidth)
   );
+}else if (currentScreenWidth < 510) {
+  document.documentElement.style.setProperty("--size-coeff", String(0.35));
 } else if (currentScreenWidth < 768) {
   document.documentElement.style.setProperty("--size-coeff", String(0.55));
 } else {
