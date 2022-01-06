@@ -176,7 +176,7 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: calc(10px * var(--size-coeff));
+  gap: calc(20px * var(--size-coeff));
 }
 
 .menu div a {
