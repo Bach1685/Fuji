@@ -492,6 +492,31 @@ a:visited {
   line-height: calc(50px * var(--size-coeff));
 }
 
+
+.print-card {
+  width: calc(544px * var(--size-coeff));
+  height: calc(653px * var(--size-coeff));
+  position: relative;
+  margin: auto;
+}
+
+.print-card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.print-card-text {
+  width: 100%;
+  height: calc(143px * var(--size-coeff));
+  /* background: chartreuse; */
+  position: absolute;
+  bottom: calc(5px * var(--size-coeff));
+  text-align: center;
+  /* left: calc(45px * var(--size-coeff)); */
+  font-family: "MarckScript-Regular";
+  font-size: calc(50px * var(--size-coeff));
+}
+
 .recovery {
   background: #db8181;
 }
