@@ -447,7 +447,6 @@ a:visited {
   padding-top: calc(50px * var(--size-coeff));
   margin: auto;
   padding-bottom: calc(50px * var(--size-coeff));
-
 }
 
 .print-content-bottom-text {
