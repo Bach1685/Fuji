@@ -375,7 +375,6 @@ a:visited {
   /* padding-top: 5%; */
 }
 
-
 .block-long-card-text {
   height: calc(540px * var(--card-size-coeff) * var(--size-coeff));
   font-size: calc(120px * var(--card-size-coeff) * var(--size-coeff));
@@ -492,11 +491,10 @@ a:visited {
   background: #db8181;
 }
 
-.recovery-img {
-  margin: auto;
-  display: block;
-  max-width: calc(1082px * var(--size-coeff));
-  /* max-height: calc(815px * var(--size-coeff)); */
+.recovery-card-img {
+  width: calc(1167px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
+  height: calc(1025px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
+
 }
 
 .polygraphy {
