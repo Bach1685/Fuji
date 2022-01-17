@@ -353,26 +353,14 @@ a:visited {
   margin: auto;
 }
 
-.block-long-card-img {
-  width: calc(1172px * var(--card-size-coeff) * var(--size-coeff));
-  height: calc(1617px * var(--card-size-coeff) * var(--size-coeff));
-}
-
 .block-card-img {
   width: calc(1167px * var(--card-size-coeff) * var(--size-coeff));
   height: calc(1401px * var(--card-size-coeff) * var(--size-coeff));
 }
 
-.block-long-card-text {
-  width: 100%;
-  height: calc(540px * var(--card-size-coeff) * var(--size-coeff));
-  /* background: chartreuse; */
-  position: absolute;
-  bottom: calc(0px * var(--size-coeff));
-  text-align: center;
-  font-family: "MarckScript-Regular";
-  font-size: calc(120px * var(--card-size-coeff) * var(--size-coeff));
-  /* padding-top: 5%; */
+.block-long-card-img {
+  width: calc(1172px * var(--card-size-coeff) * var(--size-coeff));
+  height: calc(1617px * var(--card-size-coeff) * var(--size-coeff));
 }
 
 .block-card-text {
@@ -385,6 +373,12 @@ a:visited {
   font-family: "MarckScript-Regular";
   font-size: calc(100px * var(--card-size-coeff) * var(--size-coeff));
   /* padding-top: 5%; */
+}
+
+
+.block-long-card-text {
+  height: calc(540px * var(--card-size-coeff) * var(--size-coeff));
+  font-size: calc(120px * var(--card-size-coeff) * var(--size-coeff));
 }
 
 .print {
