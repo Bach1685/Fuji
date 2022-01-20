@@ -215,7 +215,7 @@ a:visited {
 }
 
 .burger-menu {
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-direction: column;
   font-family: "Montserrat-Bold";
@@ -599,6 +599,10 @@ footer p {
 
   .menu {
     display: none;
+  }
+
+  .burger-menu {
+    display: flex;
   }
 
   .burger-img {
