@@ -562,6 +562,51 @@ footer p {
   line-height: calc(80px * var(--size-coeff));
 }
 
+.popup {
+  width: calc(700px * var(--size-coeff));
+  /* height: calc(700px * var(--size-coeff)); */
+  /* background-color: rgba(0,0,0,0.5); */
+  background: rgb(31, 161, 236, 1);
+  /* overflow:hidden; */
+  position: fixed;
+  top: calc(100px * var(--size-coeff));
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  border-radius: calc(100px * var(--size-coeff));
+  font-family: "Montserrat-Regular";
+  font-size: calc(40px * var(--size-coeff));
+  overflow: hidden;
+
+}
+
+.popup-menu-online {
+  /* display: block; */
+  margin: auto;
+  width: calc(580px * var(--size-coeff));
+  left: 0px;
+  position: relative;
+  transition: 1s;
+  overflow: -moz-hidden-unscrollable;
+
+}
+.popup-menu-online-p {
+  margin-top: calc(80px * var(--size-coeff));
+  margin-bottom: calc(80px * var(--size-coeff));
+  color: white;
+
+}
+
+.popup-content {
+  margin: 40px auto 0px auto;
+  width: 100px;
+  height: 40px;
+  padding: 10px;
+  background-color: #c5c5c5;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px #000;
+}
+
 @media (max-width: 950px) {
   .about-us-content-main {
     margin-top: calc(130px * var(--size-coeff));

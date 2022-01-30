@@ -10,6 +10,15 @@ Array.from(document.getElementsByClassName("close-burger-menu")).forEach(
   }
 );
 
+Array.from(document.getElementsByClassName("popup-menu-online-p")).forEach(
+  (element) => {
+    element.addEventListener("click", () => {
+      document.getElementById("popup-menu-online").style = 
+      "left: -300px;";
+    });
+  }
+);
+
 const currentScreenWidth = window.innerWidth;
 const startScreenWidth = 1920;
 const borderScreenWidth = 1280;
