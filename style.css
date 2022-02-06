@@ -580,7 +580,7 @@ footer p {
 
 }
 
-.popup-menu-online {
+.popup-menu {
   /* display: block; */
   margin: auto;
   width: calc(580px * var(--size-coeff));
@@ -590,11 +590,20 @@ footer p {
   overflow: -moz-hidden-unscrollable;
 
 }
-.popup-menu-online-p {
+.popup-menu-p {
   margin-top: calc(80px * var(--size-coeff));
   margin-bottom: calc(80px * var(--size-coeff));
   color: white;
+}
 
+.print-order{
+  width: 100%;
+  height: calc(300px * var(--size-coeff));
+  background: #56bc97;
+  position: absolute;
+  top: calc(80px * var(--size-coeff));
+  left: calc(700px * var(--size-coeff));
+  transition: 1s;
 }
 
 .popup-content {
