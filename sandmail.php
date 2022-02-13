@@ -21,6 +21,8 @@ $body = "<h1>Письмо отправлено!</h1>";
 
 //if(!empty($_FILES[]))
 
+$mail->Body = $body;
+
 if (!$mail->send()){
     $message = 'Ошибка';
 } else{
