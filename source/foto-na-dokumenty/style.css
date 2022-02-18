@@ -1,0 +1,23 @@
+.photo-for-documents {
+  /* background: #bd87e7; */
+  /* background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); */
+  /* background: linear-gradient(to bottom, #33ccff 0%, #ffffff 100%); */
+  background: linear-gradient(to bottom, #ffccff 0%, #ffcc99 100%);
+  /* background: linear-gradient(to bottom, #f8c539 0%, #ffcc99 100%); */
+}
+
+.photo-for-documents-text{
+    margin-top: calc(50px * var(--size-coeff));
+    margin-bottom: calc(50px * var(--size-coeff));
+}
+
+.photo-for-documents-text-p {
+  text-indent: 2em;
+
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  /* padding: calc(50px * var(--size-coeff)); */
+  line-height: calc(55px * var(--size-coeff));
+  color: #2d2e2e;
+  margin-bottom: 30px;
+}

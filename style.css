@@ -139,8 +139,10 @@ html {
 header {
   height: calc(120px * var(--size-coeff));
   width: 100%;
-  background: black;
+  background: rgb(34, 34, 34);
   top: 0px;
+  padding-left: calc(80px * var(--size-coeff));
+  padding-right: calc(80px * var(--size-coeff));
 }
 
 .header-content {
@@ -168,7 +170,7 @@ header {
 a,
 a:visited {
   text-decoration: none;
-  color: white;
+  color: rgb(241, 237, 237);
 }
 
 .menu div {
@@ -185,7 +187,7 @@ a:visited {
 .burger {
   position: fixed;
   /* display: none; */
-  width: 300px;
+  width: 200px;
   background: #000000;
   top: 0;
   left: -300px;
@@ -308,25 +310,23 @@ a:visited {
   margin: auto;
 }
 
-.photo-for-documents {
-  background: #bd87e7;
-}
-
-.block {
-  /* min-height: calc(1230px * var(--size-coeff)); */
+.block{
+  padding-left: calc(80px * var(--size-coeff));
+  padding-right: calc(80px * var(--size-coeff));
 }
 
 .block-content {
   max-width: calc(var(--total-width) * var(--size-coeff));
   margin: auto;
-  padding: calc(50px * var(--size-coeff)) calc(20px * var(--size-coeff));
+  padding: calc(80px * var(--size-coeff)) calc(0px * var(--size-coeff));
 }
 
 .block-content-title {
   font-family: "Montserrat-Black";
   font-size: calc(64px * var(--size-coeff));
   text-align: center;
-  padding-bottom: calc(40px * var(--size-coeff));
+  color: #202020;
+
 }
 
 .block-content-text {
@@ -549,7 +549,7 @@ a:visited {
 footer {
   width: 100%;
   height: calc(100px * var(--size-coeff));
-  background: black;
+  background: rgb(34, 34, 34);
 }
 
 footer p {
