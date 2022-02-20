@@ -1,0 +1,65 @@
+.print {
+  background: #e4a972;
+}
+
+.print-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(20px * var(--size-coeff));
+  /* background: chartreuse; */
+  /* padding-top: calc(50px * var(--size-coeff)); */
+  margin: auto;
+  padding-bottom: calc(50px * var(--size-coeff));
+}
+
+.print-content-bottom-text {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  max-width: calc(720px * var(--size-coeff));
+  min-height: calc(460px * var(--size-coeff));
+  line-height: calc(45px * var(--size-coeff));
+
+  padding-top: calc(50px * var(--size-coeff));
+  padding-left: calc(50px * var(--size-coeff));
+  /* text-align: justify; */
+  /* background: chartreuse; */
+}
+
+.print-content-bottom-text span {
+  font-family: "Montserrat-SemiBold";
+}
+
+.print-content-bottom-card {
+  width: calc(570px * var(--size-coeff));
+  height: calc(690px * var(--size-coeff));
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+.print-content-bottom-card-img {
+  width: calc(570px * var(--size-coeff));
+  height: calc(690px * var(--size-coeff));
+}
+
+.print-content-bottom-card-text {
+  width: calc(477px * var(--size-coeff));
+  height: calc(95px * var(--size-coeff));
+  position: absolute;
+  bottom: calc(35px * var(--size-coeff));
+  left: calc(45px * var(--size-coeff));
+  font-family: "MarckScript-Regular";
+  font-size: calc(50px * var(--size-coeff));
+}
+
+.print-content-bottom-card-text p {
+  line-height: calc(50px * var(--size-coeff));
+}
+
+@media (max-width: 768px) {
+
+  .print-content {
+    justify-content: center;
+  }
+}
