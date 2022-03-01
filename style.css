@@ -379,13 +379,6 @@ a:visited {
   font-size: calc(120px * var(--card-size-coeff) * var(--size-coeff));
 }
 
-
-
-
-.polygraphy {
-  background: #56bc97;
-}
-
 .accessories {
   background: #868bef;
 }
