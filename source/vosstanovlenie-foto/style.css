@@ -1,0 +1,30 @@
+.recovery {
+  background: #db8181;
+}
+
+.recovery-content-text {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  line-height: calc(45px * var(--size-coeff));
+  max-width: calc(1200px * var(--size-coeff));
+  margin: auto;
+  margin-bottom:  calc(80px * var(--size-coeff));
+
+}
+
+.recovery-card {
+  width: calc(1167px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
+  height: calc(1025px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
+}
+
+.recovery-card-img {
+  width: calc(1167px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
+  height: calc(1025px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
+}
+
+@media (max-width: 768px) {
+  .recovery-img {
+    max-width: calc(700px * var(--size-coeff));
+  }
+}

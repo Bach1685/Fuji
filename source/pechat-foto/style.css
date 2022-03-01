@@ -53,7 +53,7 @@
   font-size: calc(50px * var(--size-coeff));
 }
 
-.print-content-bottom-card-text p {
+.print-content-bottom-card-text-p {
   line-height: calc(50px * var(--size-coeff));
 }
 

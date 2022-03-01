@@ -381,19 +381,6 @@ a:visited {
 
 
 
-.recovery {
-  background: #db8181;
-}
-
-.recovery-card {
-  width: calc(1167px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
-  height: calc(1025px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
-}
-
-.recovery-card-img {
-  width: calc(1167px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
-  height: calc(1025px * 1.6 * var(--card-size-coeff) * var(--size-coeff));
-}
 
 .polygraphy {
   background: #56bc97;
