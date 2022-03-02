@@ -379,10 +379,6 @@ a:visited {
   font-size: calc(120px * var(--card-size-coeff) * var(--size-coeff));
 }
 
-.accessories {
-  background: #868bef;
-}
-
 .contacts {
   background: #e4be72;
 }

@@ -1,0 +1,25 @@
+
+.accessories {
+  background: #868bef;
+}
+
+.accessories-text{
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  line-height: calc(45px * var(--size-coeff));
+  max-width: calc(1200px * var(--size-coeff));
+  margin: auto;
+  margin-bottom:  calc(80px * var(--size-coeff));
+}
+
+.photo-for-documents-text-p {
+  text-indent: 2em;
+
+  font-family: "Montserrat-Regular";
+  font-size: calc(36px * var(--size-coeff));
+  /* padding: calc(50px * var(--size-coeff)); */
+  line-height: calc(55px * var(--size-coeff));
+  color: #2d2e2e;
+  margin-bottom: 30px;
+}
