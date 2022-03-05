@@ -1,6 +1,5 @@
 .polygraphy {
   background: #bc5667c7;
-  
 }
 
 .polygraphy-content-text {
@@ -11,4 +10,9 @@
   max-width: calc(1200px * var(--size-coeff));
   margin: auto;
   margin-bottom:  calc(80px * var(--size-coeff));
+}
+
+.mail {
+  font-family: "Montserrat-SemiBold";
+  color: rgb(8, 112, 182);
 }
