@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Фотоуслуги в Брянске</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="common-style.css" />
+    <link rel="stylesheet" href="source/o-nas/style.css" />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -49,15 +50,19 @@
       <div class="header-content">
         <nav class="menu">
           <div>
-            <a href="/foto-na-dokumenty.html">Фото на документы</a>
-            <a href="#polygraphy">Полиграфия</a>
+            <a href="foto-na-dokumenty.html">Фото на документы</a>
+            <a href="poligrafiya.html">Полиграфия</a>
           </div>
           <div>
-            <a href="#print">Печать фото и проявка плёнки</a>
-            <a href="#accessories">Аксессуары</a>
+            <a href="pechat-foto.html">Печать фото</a>
+            <a href="aksessuary.html">Аксессуары</a>
           </div>
           <div>
-            <a href="#recovery">Восстановление и оцифровка</a>
+            <a href="vosstanovlenie-foto.html">Восстановление фото</a>
+            <a href="proyavka-plyonki.html">Проявка плёнки</a>
+          </div>
+          <div>
+            <a href="ocifrovka-videokasset.html">Оцифровка</a>
             <a href="#contacts">Контакты</a>
           </div>
         </nav>
@@ -69,11 +74,13 @@
         />
         <div class="burger" id="burger">
           <nav class="burger-menu close-burger-menu">
-            <a href="/foto-na-dokumenty.html">Фото на документы</a>
-            <a href="#polygraphy">Полиграфия</a>
-            <a href="#print">Печать фото и проявка плёнки</a>
-            <a href="#accessories">Аксессуары</a>
-            <a href="#recovery">Восстановление и оцифровка</a>
+            <a href="foto-na-dokumenty.html">Фото на документы</a>
+            <a href="poligrafiya.html">Полиграфия</a>
+            <a href="pechat-foto.html">Печать фото</a>
+            <a href="proyavka-plyonki.html">Проявка плёнки</a>
+            <a href="aksessuary.html">Аксессуары</a>
+            <a href="vosstanovlenie-foto.html">Восстановление фото</a>
+            <a href="ocifrovka-videokasset.html">Оцифровка</a>
             <a href="#contacts">Контакты</a>
           </nav>
           <img
@@ -82,8 +89,14 @@
             alt="фото в брянске"
           />
         </div>
+        <div class="schedule">
+          <p>пн - пт: 09:00 - 19:00</p>
+          <p>сб: 10:00 - 18:00</p>
+          <p>вс: 12:00 - 18:00</p>
+        </div>
+        <a class="phone" href="tel:+74832663998">+7 (4832) 66-39-98</a>
         <div class="logo">
-          <p class="title">Фотосалон Фуджи</p>
+          <a class="title" href="index.html">Фотосалон Фуджи</a>
           <p>Брянск, Центральный дом быта, 2 этаж</p>
         </div>
       </div>
@@ -106,44 +119,45 @@
               alt="фото брянска"
             />
             <p class="about-us-content-main-text2">
-              Мы работаем уже более 20 лет и знаем своё дело. Приходите к нам —
+              Мы работаем уже более 25 лет и знаем своё дело. Приходите к нам —
               мы сфотографируем вас на документы, проявим фото на настоящей
               фотобумаге, нанесём изображение на дерево, оцифруем старые
               видеокассеты, и это ещё не всё!
             </p>
-            <a href="#photo-for-documents" class="services-view">Обзор услуг</a>
+            <a href="#contacts" class="services-view">Посетить</a>
           </div>
           <img
             class="about-us-img"
-            src="source/img/about-us/about-us.png"
+            src="source/img/about-us/about-us1.png"
             alt="фото брянска"
           />
         </div>
       </section>
-     
-      
       <section class="block contacts" id="contacts">
-        <div class="block-content">
-          <h3 class="block-content-title">Контакты</h3>
+        <div class="block-content block-content-contracts">
+          <!-- <h3 class="block-content-title">Контакты</h3> -->
           <div class="block-content-text">
-            <div class="contacts-rows">
-              <div class="contacts-row">
+            <ul class="contacts-list">
+              <li class="contacts-row">
                 <img
                   class="contacts-img"
                   src="source/img/contacts/phone.svg"
                   alt="телефон фотосалона"
                 />
-                <span  class="contacts-text">+7 (4832) 66-39-98</span>
-              </div>
-              <div class="contacts-row">
+                <a class="contacts-text" href="tel:+74832663998"
+                  >+7 (4832) 66-39-98</a
+                >
+                <!-- <span class="contacts-text">+7 (4832) 66-39-98</span> -->
+              </li>
+              <li class="contacts-row">
                 <img
                   class="contacts-img"
                   src="source/img/contacts/mail.svg"
                   alt="электронная почта фотосалона"
                 />
-                <span class="contacts-text">fuji32@bk.ru</span>
-              </div>
-              <div class="contacts-row">
+                <a href="mailto:fuji32@bk.ru" class="contacts-text"> fuji32@bk.ru</a>
+              </li>
+              <li class="contacts-row">
                 <img
                   class="contacts-img"
                   src="source/img/contacts/address.png"
@@ -152,8 +166,8 @@
                 <span class="contacts-text"
                   >г.Брянск пр.Ленина 67, Центральны Дом Быта, 2 этаж</span
                 >
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="map" style="position: relative; overflow: hidden">
             <!-- <a href="https://yandex.ru/maps/org/tsentralny_dom_byta/1025111412/?utm_medium=mapframe&utm_source=maps" 
@@ -191,7 +205,7 @@
           <p class="contacts-text">
             Дом быта большой... Как найти наш магазин? Держите гайд:
           </p>
-          <div class="road">
+          <div class="block-cards">
             <div class="block-card contacts-card">
               <img
                 class="block-card-img"
@@ -251,7 +265,7 @@
         </div>
       </section>
       <footer>
-        <p>&copy 1998 - 2022 Брянск</p>
+        <p>&copy 1994 - 2022 Брянск</p>
       </footer>
     </main>
   </body>

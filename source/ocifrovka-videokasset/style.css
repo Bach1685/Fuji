@@ -11,3 +11,8 @@
   margin: auto;
   margin-bottom:  calc(80px * var(--size-coeff));
 }
+
+.mail {
+  font-family: "Montserrat-SemiBold";
+  color: rgb(8, 112, 182);
+}

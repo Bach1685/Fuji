@@ -1,0 +1,395 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/* -------- */
+
+:root {
+  --total-width: 1540px;
+  --size-coeff: 1;
+  --card-size-coeff: 0.3;
+}
+
+@font-face {
+  font-family: "Montserrat-Bold";
+  src: url("source/fonts/montserrat/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("source/fonts/montserrat/Montserrat-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-Regular";
+  src: url("source/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Montserrat-SemiBold";
+  src: url("source/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MarckScript-Regular";
+  src: url("source/fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
+header {
+  height: calc(155px * var(--size-coeff));
+  width: 100%;
+  background: rgb(34, 34, 34);
+  top: 0px;
+  padding-left: calc(80px * var(--size-coeff));
+  padding-right: calc(80px * var(--size-coeff));
+}
+
+.header-content {
+  max-width: calc(var(--total-width) * var(--size-coeff));
+  position: relative;
+  top: 10%;
+  margin: auto;
+  padding: 0 calc(20px * var(--size-coeff));
+}
+
+.menu {
+  max-width: calc(910px * var(--size-coeff));
+  height: calc(50px * var(--size-coeff));
+  display: flex;
+  justify-content: space-between;
+  font-family: "Montserrat-Bold";
+  font-size: calc(18px * var(--size-coeff));
+  padding-top: calc(30px * var(--size-coeff));
+  margin-right: calc(450px * var(--size-coeff));
+  gap: calc(20px * var(--size-coeff));
+
+  /* flex-wrap: wrap; */
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: rgb(241, 237, 237);
+}
+
+.menu div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: calc(20px * var(--size-coeff));
+}
+
+.menu div a {
+  display: block;
+}
+
+.burger {
+  position: fixed;
+  /* display: none; */
+  width: 200px;
+  background: #000000;
+  top: 0;
+  left: -300px;
+  transition: 0.5s;
+  border-bottom-right-radius: 40px;
+  z-index: 1;
+}
+
+.burger-img {
+  display: none;
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  top: calc(40px * var(--size-coeff));
+  z-index: 1;
+}
+
+.burger-cross {
+  filter: invert(1);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.burger-menu {
+  display: none;
+  justify-content: space-between;
+  flex-direction: column;
+  font-family: "Montserrat-Bold";
+  font-size: calc(30px * var(--size-coeff));
+  gap: calc(40px * var(--size-coeff));
+  padding: calc(40px * var(--size-coeff));
+}
+
+.schedule {
+  position: absolute;
+  right: calc(230px * var(--size-coeff));
+  top: calc(45px * var(--size-coeff));
+  width: calc(200px * var(--size-coeff));
+  height: calc(70px * var(--size-coeff));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat-Regular";
+  font-size: calc(18px * var(--size-coeff));
+  color: rgb(224, 223, 223);
+  text-align: right;
+}
+
+.logo {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  width: calc(180px * var(--size-coeff));
+  height: calc(90px * var(--size-coeff));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat-Regular";
+  font-size: calc(15px * var(--size-coeff));
+  color: white;
+}
+
+.phone {
+  font-family: "Montserrat-Bold";
+  font-size: calc(18px * var(--size-coeff));
+  position: absolute;
+  right: calc(230px * var(--size-coeff));
+  top: calc(15px * var(--size-coeff));
+}
+
+.title {
+  font-family: "Montserrat-Black";
+  font-size: calc(25px * var(--size-coeff));
+}
+
+.block {
+  padding-left: calc(80px * var(--size-coeff));
+  padding-right: calc(80px * var(--size-coeff));
+}
+
+.block-content {
+  max-width: calc(var(--total-width) * var(--size-coeff));
+  margin: auto;
+  padding: calc(80px * var(--size-coeff)) calc(0px * var(--size-coeff));
+}
+
+.block-content-title {
+  font-family: "Montserrat-Black";
+  font-size: calc(64px * var(--size-coeff));
+  text-align: center;
+  color: #202020;
+  margin-bottom: calc(100px * var(--size-coeff));
+}
+
+.block-content-text {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(30px * var(--size-coeff));
+  line-height: calc(50px * var(--size-coeff));
+  max-width: calc(1200px * var(--size-coeff));
+  margin: auto;
+  margin-bottom: calc(80px * var(--size-coeff));
+}
+
+.block-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(100px * var(--size-coeff));
+  width: 100%;
+  height: 100%;
+  margin-bottom: calc(80px * var(--size-coeff));
+}
+
+.block-card {
+  position: relative;
+  margin: auto;
+  /* width: calc(1167px * var(--card-size-coeff) * var(--size-coeff));
+  height: calc(1401px * var(--card-size-coeff) * var(--size-coeff)); */
+}
+
+.block-card-img {
+  width: calc(1167px * var(--card-size-coeff) * var(--size-coeff));
+  height: calc(1401px * var(--card-size-coeff) * var(--size-coeff));
+}
+
+.block-long-card-img {
+  height: calc(1617px * var(--card-size-coeff) * var(--size-coeff));
+}
+
+.block-card-text {
+  width: 100%;
+  height: calc(325px * var(--card-size-coeff) * var(--size-coeff));
+  /* background: chartreuse; */
+  position: absolute;
+  bottom: calc(0px * var(--size-coeff));
+  text-align: center;
+  font-family: "MarckScript-Regular";
+  font-size: calc(100px * var(--card-size-coeff) * var(--size-coeff));
+  /* padding-top: 5%; */
+}
+
+.block-long-card-text {
+  height: calc(540px * var(--card-size-coeff) * var(--size-coeff));
+  font-size: calc(120px * var(--card-size-coeff) * var(--size-coeff));
+}
+
+footer {
+  width: 100%;
+  height: calc(100px * var(--size-coeff));
+  background: rgb(39, 39, 39);
+  /* filter: blur(0.2px); */
+}
+
+footer p {
+  color: white;
+  font-size: calc(20px * var(--size-coeff));
+  font-family: "Montserrat-Regular";
+  margin: auto;
+  /* background: wheat; */
+  text-align: center;
+  line-height: calc(80px * var(--size-coeff));
+}
+
+@media (max-width: 950px) {
+  .menu {
+    display: none;
+  }
+
+  .burger-menu {
+    display: flex;
+  }
+
+  .burger-img {
+    display: block;
+    width: calc(80px * var(--size-coeff));
+    height: calc(80px * var(--size-coeff));
+  }
+}
+
+@media (max-width: 768px) {
+  .block-cards {
+    display: block;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+
+  .block-card {
+    display: inline-block;
+  }
+
+  .block-long-card {
+    display: inline-block;
+    position: relative;
+  }
+
+  :root {
+    --card-size-coeff: 0.5;
+  }
+}

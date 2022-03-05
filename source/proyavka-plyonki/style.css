@@ -2,6 +2,11 @@
   background: #e4a972;
 }
 
+.mail {
+  font-family: "Montserrat-SemiBold";
+  color: rgb(14, 85, 117);
+}
+
 .film-development-content {
   display: flex;
   justify-content: space-between;
@@ -16,13 +21,13 @@
 .film-development-text-p {
   text-indent: 2em;
   font-family: "Montserrat-Regular";
-  font-size: calc(36px * var(--size-coeff));
+  font-size: calc(30px * var(--size-coeff));
   max-width: calc(720px * var(--size-coeff));
-  min-height: calc(460px * var(--size-coeff));
+  /* min-height: calc(400px * var(--size-coeff)); */
   line-height: calc(45px * var(--size-coeff));
 
-  padding-top: calc(50px * var(--size-coeff));
-  padding-left: calc(50px * var(--size-coeff));
+  padding-bottom: calc(50px * var(--size-coeff));
+  /* padding-left: calc(50px * var(--size-coeff)); */
   /* text-align: justify; */
   /* background: chartreuse; */
 }
@@ -32,25 +37,25 @@
 }
 
 .film-development-content-bottom-card {
-  width: calc(570px * var(--size-coeff));
-  height: calc(690px * var(--size-coeff));
+  width: calc(485px * var(--size-coeff));
+  height: calc(585px * var(--size-coeff));
   position: relative;
   transform: rotate(-5deg);
 }
 
 .film-development-card-img {
-  width: calc(570px * var(--size-coeff));
-  height: calc(690px * var(--size-coeff));
+  width: calc(485px * var(--size-coeff));
+  height: calc(585px * var(--size-coeff));
 }
 
 .film-development-card-text {
   width: calc(477px * var(--size-coeff));
   height: calc(95px * var(--size-coeff));
   position: absolute;
-  bottom: calc(35px * var(--size-coeff));
+  bottom: calc(15px * var(--size-coeff));
   left: calc(45px * var(--size-coeff));
   font-family: "MarckScript-Regular";
-  font-size: calc(45px * var(--size-coeff));
+  font-size: calc(35px * var(--size-coeff));
 }
 
 @media (max-width: 768px) {

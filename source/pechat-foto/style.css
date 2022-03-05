@@ -1,5 +1,5 @@
 .print {
-  background: #e4a972;
+  background: #8cbc56c9;
 }
 
 .print-content {
@@ -10,15 +10,15 @@
   /* background: chartreuse; */
   /* padding-top: calc(50px * var(--size-coeff)); */
   margin: auto;
-  padding-bottom: calc(50px * var(--size-coeff));
+  /* padding-bottom: calc(50px * var(--size-coeff)); */
 }
 
 .print-content-bottom-text {
   text-indent: 2em;
   font-family: "Montserrat-Regular";
-  font-size: calc(36px * var(--size-coeff));
-  max-width: calc(720px * var(--size-coeff));
-  min-height: calc(460px * var(--size-coeff));
+  font-size: calc(30px * var(--size-coeff));
+  max-width: calc(820px * var(--size-coeff));
+  /* min-height: calc(460px * var(--size-coeff)); */
   line-height: calc(45px * var(--size-coeff));
 
   padding-top: calc(50px * var(--size-coeff));
@@ -36,6 +36,17 @@
   height: calc(690px * var(--size-coeff));
   position: relative;
   transform: rotate(-5deg);
+  margin-top: calc(40px * var(--size-coeff));
+}
+
+.mail {
+  font-family: "Montserrat-SemiBold";
+  color: rgb(23, 152, 238);
+}
+
+.format{
+  font-family: "Montserrat-SemiBold";
+  color: rgb(23, 152, 238);
 }
 
 .print-content-bottom-card-img {
@@ -57,8 +68,13 @@
   line-height: calc(50px * var(--size-coeff));
 }
 
-@media (max-width: 768px) {
+.print-text{
+  font-size: calc(30px * var(--size-coeff));
+  text-align: center;
+  margin-top: calc(50px * var(--size-coeff));
+}
 
+@media (max-width: 768px) {
   .print-content {
     justify-content: center;
   }
