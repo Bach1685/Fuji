@@ -227,7 +227,7 @@ a:visited {
   padding: calc(40px * var(--size-coeff));
 }
 .burger-menu a {
-  color: azure;
+  color: rgb(241, 237, 237);
 }
 
 .schedule {
