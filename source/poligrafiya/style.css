@@ -18,5 +18,12 @@
 }
 
 .tee-shirt {
-  font-size: calc(45px * var(--size-coeff));
+  font-size: calc(27px * var(--size-coeff));
 }
+
+@media (max-width: 768px) {
+  .tee-shirt {
+    font-size: calc(45px * var(--size-coeff));
+  }
+}
+
