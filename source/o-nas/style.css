@@ -107,13 +107,7 @@ main {
 }
 
 .contacts-text {
-  font-size: calc(30px * var(--size-coeff));
-  font-family: "Montserrat-Regular";
-  color: #000000;
   margin-top: calc(50px * var(--size-coeff));
-  margin-bottom: calc(50px * var(--size-coeff));
-
-  /* padding: calc(50px * var(--size-coeff)) 0; */
 }
 
 .contacts-card-img {

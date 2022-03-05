@@ -1,17 +1,15 @@
-
 .accessories {
-  background: #5697bc;
-
+  background: #73cafc;
 }
 
-.accessories-text{
+.accessories-text {
   text-indent: 2em;
   font-family: "Montserrat-Regular";
   font-size: calc(36px * var(--size-coeff));
   line-height: calc(45px * var(--size-coeff));
   max-width: calc(1200px * var(--size-coeff));
   margin: auto;
-  margin-bottom:  calc(80px * var(--size-coeff));
+  margin-bottom: calc(80px * var(--size-coeff));
 }
 
 .photo-for-documents-text-p {
