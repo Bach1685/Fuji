@@ -204,6 +204,7 @@ a:visited {
   height: 40px;
   position: fixed;
   top: calc(40px * var(--size-coeff));
+  left: calc(20px * var(--size-coeff));
   z-index: 1;
 }
 
