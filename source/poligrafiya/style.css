@@ -16,3 +16,7 @@
   font-family: "Montserrat-SemiBold";
   color: rgb(8, 112, 182);
 }
+
+.tee-shirt {
+  font-size: calc(45px * var(--size-coeff));
+}
