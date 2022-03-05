@@ -225,8 +225,8 @@ a:visited {
   gap: calc(40px * var(--size-coeff));
   padding: calc(40px * var(--size-coeff));
 }
-.burger-menu a{
-  color:azure;
+.burger-menu a {
+  color: azure;
 }
 
 .schedule {
@@ -258,7 +258,7 @@ a:visited {
   color: white;
 }
 
-.logo p{
+.logo p {
   line-height: calc(17px * var(--size-coeff));
 }
 
@@ -382,6 +382,12 @@ footer p {
 }
 
 @media (max-width: 768px) {
+
+  .block {
+    padding-left: calc(20px * var(--size-coeff));
+    padding-right: calc(20px * var(--size-coeff));
+  }
+
   .block-cards {
     display: block;
     overflow-x: scroll;
