@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Фотоуслуги в Брянске</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="common-style.css" />
+    <link rel="stylesheet" href="source/o-nas/style.css" />
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
       (function (m, e, t, r, i, k, a) {
@@ -49,41 +50,53 @@
       <div class="header-content">
         <nav class="menu">
           <div>
-            <a href="#photo-for-documents">Фото на документы</a>
-            <a href="#polygraphy">Полиграфия</a>
+            <a href="foto-na-dokumenty.html">Фото на документы</a>
+            <a href="poligrafiya.html">Полиграфия</a>
           </div>
           <div>
-            <a href="#print">Печать фото и проявка плёнки</a>
-            <a href="#accessories">Аксессуары</a>
+            <a href="pechat-foto.html">Печать фото</a>
+            <a href="aksessuary.html">Аксессуары</a>
           </div>
           <div>
-            <a href="#recovery">Восстановление и оцифровка</a>
+            <a href="vosstanovlenie-foto.html">Восстановление фото</a>
+            <a href="proyavka-plyonki.html">Проявка плёнки</a>
+          </div>
+          <div>
+            <a href="ocifrovka-videokasset.html">Оцифровка</a>
             <a href="#contacts">Контакты</a>
           </div>
         </nav>
         <img
           class="burger-img"
           id="burger-img"
-          src="source/img/header/burger.svg"
+          src="source/header/burger.svg"
           alt="меню фотоуслуг"
         />
         <div class="burger" id="burger">
           <nav class="burger-menu close-burger-menu">
-            <a href="#photo-for-documents">Фото на документы</a>
-            <a href="#polygraphy">Полиграфия</a>
-            <a href="#print">Печать фото и проявка плёнки</a>
-            <a href="#accessories">Аксессуары</a>
-            <a href="#recovery">Восстановление и оцифровка</a>
+            <a href="foto-na-dokumenty.html">Фото на документы</a>
+            <a href="poligrafiya.html">Полиграфия</a>
+            <a href="pechat-foto.html">Печать фото</a>
+            <a href="proyavka-plyonki.html">Проявка плёнки</a>
+            <a href="aksessuary.html">Аксессуары</a>
+            <a href="vosstanovlenie-foto.html">Восстановление фото</a>
+            <a href="ocifrovka-videokasset.html">Оцифровка</a>
             <a href="#contacts">Контакты</a>
           </nav>
           <img
             class="close-burger-menu burger-cross"
-            src="source/img/header/cross.svg"
+            src="source/header/cross.svg"
             alt="фото в брянске"
           />
         </div>
+        <div class="schedule">
+          <p>пн - пт: 09:00 - 19:00</p>
+          <p>сб: 10:00 - 18:00</p>
+          <p>вс: 12:00 - 18:00</p>
+        </div>
+        <a class="phone" href="tel:+74832663998">+7 (4832) 66-39-98</a>
         <div class="logo">
-          <p class="title">Фотосалон Фуджи</p>
+          <a class="title" href="index.html">Фотосалон Фуджи</a>
           <p>Брянск, Центральный дом быта, 2 этаж</p>
         </div>
       </div>
@@ -97,312 +110,64 @@
             </h2>
             <img
               class="about-us-planshet"
-              src="source/img/about-us/about-us-planshet.png"
+              src="source/o-nas/img/about-us-planshet.png"
               alt="фото брянска"
             />
             <img
               class="about-us-mobile"
-              src="source/img/about-us/about-us-mobile.png"
+              src="source/o-nas/img/about-us-mobile.png"
               alt="фото брянска"
             />
             <p class="about-us-content-main-text2">
-              Мы работаем уже более 20 лет и знаем своё дело. Приходите к нам —
+              Мы работаем уже более 25 лет и знаем своё дело. Приходите к нам —
               мы сфотографируем вас на документы, проявим фото на настоящей
               фотобумаге, нанесём изображение на дерево, оцифруем старые
               видеокассеты, и это ещё не всё!
             </p>
-            <a href="#photo-for-documents" class="services-view">Обзор услуг</a>
+            <a href="#contacts" class="services-view">Посетить</a>
           </div>
           <img
             class="about-us-img"
-            src="source/img/about-us/about-us.png"
+            src="source/o-nas/img/about-us1.png"
             alt="фото брянска"
           />
         </div>
       </section>
-      <section class="block photo-for-documents" id="photo-for-documents">
-        <div class="block-content">
-          <h2 class="block-content-title">Фото на документы</h2>
-          <p class="block-content-text">
-            Наши специалисты сделают фото за 5 минут на любые виды документов:
-          </p>
-          <div class="block-cards">
-            <div class="block-card">
-              <img
-                class="block-card-img block-long-card-img"
-                src="source/img/photo-for-documents/pasport-rf.png"
-                alt="фото на паспорт"
-              />
-              <div class="block-card-text block-long-card-text">
-                <br />
-                <h3>Паспорт РФ</h3>
-                <p>4шт - 350р</p>
-              </div>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img block-long-card-img"
-                src="source/img/photo-for-documents/zagran.png"
-                alt="фото на загранпаспорт"
-              />
-              <div class="block-card-text block-long-card-text">
-                <h3>Загранпаспорт</h3>
-                <p>
-                  2шт - 300р <br />
-                  4шт - 350р <br />
-                  6шт - 400р
-                </p>
-              </div>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img block-long-card-img"
-                src="source/img/photo-for-documents/three-four.png"
-                alt="фото 3 на 4"
-              />
-              <div class="block-card-text block-long-card-text">
-                <h3>Фото 3x4</h3>
-                <p>
-                  3шт - 250р <br />
-                  6шт - 300р
-                </p>
-              </div>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img block-long-card-img"
-                src="source/img/photo-for-documents/four-six.png"
-                alt="фото 4 на 6"
-              />
-              <div class="block-card-text block-long-card-text">
-                <h3>Фото 4x6</h3>
-                <p>
-                  2шт - 300р <br />
-                  4шт - 350р <br />
-                  6шт - 400р
-                </p>
-              </div>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img block-long-card-img"
-                src="source/img/photo-for-documents/unknown.png"
-                alt="свой формат фото"
-              />
-              <div class="block-card-text block-long-card-text">
-                <br />
-                <p>Сделаем фото <br />вашего формата</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="block print" id="print">
-        <div class="block-content">
-          <h2 class="block-content-title">Печать и проявка плёнки</h2>
-          <div class="print-content-bottom">
-            <div class="print-content-bottom-card">
-              <img
-                class="print-content-bottom-card-img"
-                src="source/img/print/print-machine-photo-born.png"
-                alt="мокрая печать фотографий"
-              />
-              <div class="print-content-bottom-card-text">
-                <p>Рождение фотографии...</p>
-              </div>
-            </div>
-            <p class="print-content-bottom-text">
-              Мы печатаем фото в специальной фотолаболатории с помощью японского
-              обородувания компании <span>Fujifilm</span>. Краска сочная и не
-              выгорает. То что нужно, чтобы сохранить память надолго, ведь живое
-              фото надежнее цифрового носителя. Не забывайте время от времени
-              сохранять все самые важные моменты вашей жизни на настоящей
-              фотографии, а мы вам в этом поможем!
-            </p>
-          </div>
-          <p class="block-content-text">Форматы и цены:</p>
-          <div class="block-cards">
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/print/10x15.png"
-                alt="фото 10 на 15"
-              />
-              <p class="block-card-text">10x15<br />18 руб</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/print/15x21.png"
-                alt="фото 15 на 21"
-              />
-              <p class="block-card-text">15x21<br />35 руб</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/print/21x30.png"
-                alt="фото 21 на 30"
-              />
-              <p class="block-card-text">21x30<br />70 руб</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/print/30x40.png"
-                alt="фото 30 на 40"
-              />
-              <p class="block-card-text">30x40<br />180 руб</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/print/30x45.png"
-                alt="фото 30 на 45"
-              />
-              <p class="block-card-text">30x45<br />200 руб</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/print/film.png"
-                alt="проявка пленки"
-              />
-              <p class="block-card-text">Проявка плёнки<br />260 руб</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="block recovery" id="recovery">
-        <div class="block-content">
-          <h3 class="block-content-title">Восстановление и оцифровка</h3>
-          <p class="block-content-text">
-            Принимаем заказы на восстановление старых фото и оцифрку
-            видеокассет.
-          </p>
-          <div class="block-cards">
-            <div class="block-card recovery-card">
-              <img
-                class="block-card-img recovery-card-img"
-                src="source/img/recovery/soldier1.png"
-                alt="восстановление фотографий"
-              />
-            </div>
-            <div class="block-card recovery-card">
-              <img
-                class="block-card-img recovery-card-img"
-                src="source/img/recovery/child.png"
-                alt="реставрация фото"
-              />
-            </div>
-            <div class="block-card recovery-card">
-              <img
-                class="block-card-img recovery-card-img"
-                src="source/img/recovery/soldier2.png"
-                alt="старые фото"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="block polygraphy" id="polygraphy">
-        <div class="block-content">
-          <h3 class="block-content-title">Полиграфия</h3>
-          <p class="block-content-text">Печатаем не только на бумаге...</p>
-          <div class="block-cards">
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/polirgaphy/cap.png"
-                alt="печать на кружках"
-              />
-              <p class="block-card-text">Печать на кружках</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/polirgaphy/wood.png"
-                alt="печать на дереве"
-              />
-              <p class="block-card-text">Печать на дереве</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/polirgaphy/short.png"
-                alt="печать на футболках"
-              />
-              <p class="block-card-text">Печать на футболках</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="block accessories" id="accessories">
-        <div class="block-content">
-          <h3 class="block-content-title">Аксессуары</h3>
-          <p class="block-content-text">
-            Вы также можете приобрести у нас множество товаров в сфере фото:
-          </p>
-          <div class="block-cards">
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/accessories/alboms.png"
-                alt="альбомы"
-              />
-              <p class="block-card-text">Альбомы</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/accessories/battaries.png"
-                alt="батарейки"
-              />
-              <p class="block-card-text">Батарейки</p>
-            </div>
-            <div class="block-card">
-              <img
-                class="block-card-img"
-                src="source/img/accessories/photoframe.png"
-                alt="фоторамки"
-              />
-              <p class="block-card-text">Фоторамки</p>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="block contacts" id="contacts">
-        <div class="block-content">
-          <h3 class="block-content-title">Контакты</h3>
+        <div class="block-content block-content-contracts">
+          <!-- <h3 class="block-content-title">Контакты</h3> -->
           <div class="block-content-text">
-            <div class="contacts-rows">
-              <div class="contacts-row">
+            <ul class="contacts-list">
+              <li class="contacts-row">
                 <img
                   class="contacts-img"
-                  src="source/img/contacts/phone.svg"
+                  src="source/o-nas/img/phone.svg"
                   alt="телефон фотосалона"
                 />
-                <span class="contacts-text">+7 (4832) 66-39-98</span>
-              </div>
-              <div class="contacts-row">
+                <a class="contacts-text" href="tel:+74832663998"
+                  >+7 (4832) 66-39-98</a
+                >
+                <!-- <span class="contacts-text">+7 (4832) 66-39-98</span> -->
+              </li>
+              <li class="contacts-row">
                 <img
                   class="contacts-img"
-                  src="source/img/contacts/mail.svg"
+                  src="source/o-nas/img/mail.svg"
                   alt="электронная почта фотосалона"
                 />
-                <span class="contacts-text">fuji32@bk.ru</span>
-              </div>
-              <div class="contacts-row">
+                <a href="mailto:fuji32@bk.ru" class="contacts-text"> fuji32@bk.ru</a>
+              </li>
+              <li class="contacts-row">
                 <img
                   class="contacts-img"
-                  src="source/img/contacts/address.png"
+                  src="source/o-nas/img/address.png"
                   alt="фотосалон на карте"
                 />
                 <span class="contacts-text"
                   >г.Брянск пр.Ленина 67, Центральны Дом Быта, 2 этаж</span
                 >
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
           <div class="map" style="position: relative; overflow: hidden">
             <!-- <a href="https://yandex.ru/maps/org/tsentralny_dom_byta/1025111412/?utm_medium=mapframe&utm_source=maps" 
@@ -440,11 +205,11 @@
           <p class="contacts-text">
             Дом быта большой... Как найти наш магазин? Держите гайд:
           </p>
-          <div class="road">
+          <div class="block-cards">
             <div class="block-card contacts-card">
               <img
                 class="block-card-img"
-                src="source/img/contacts/step1.png"
+                src="source/o-nas/img/step1.png"
                 alt="фотосалон находится в доме быта"
               />
               <p class="block-card-text">1. Заходим</p>
@@ -457,7 +222,7 @@
 
               <img
                 class="block-card-img"
-                src="source/img/contacts/step2.png"
+                src="source/o-nas/img/step2.png"
                 alt="идем к фотосалону"
               />
             </div>
@@ -466,7 +231,7 @@
 
               <img
                 class="block-card-img"
-                src="source/img/contacts/step3.png"
+                src="source/o-nas/img/step3.png"
                 alt="поднимаемся к фотосалону"
               />
             </div>
@@ -476,7 +241,7 @@
               </p>
               <img
                 class="block-card-img"
-                src="source/img/contacts/step4.png"
+                src="source/o-nas/img/step4.png"
                 alt="поворачиваем к фотосалону"
               />
             </div>
@@ -484,7 +249,7 @@
               <p class="block-card-text">5. Проходим коридор</p>
               <img
                 class="block-card-img"
-                src="source/img/contacts/step5.png"
+                src="source/o-nas/img/step5.png"
                 alt="проходим коридор до фотосалона"
               />
             </div>
@@ -492,7 +257,7 @@
               <p class="block-card-text">6. Ура! Мы пришли!</p>
               <img
                 class="block-card-img"
-                src="source/img/contacts/step6.png"
+                src="source/o-nas/img/step6.png"
                 alt="пришли в фотосалон"
               />
             </div>
@@ -500,7 +265,7 @@
         </div>
       </section>
       <footer>
-        <p>&copy 1998 - 2022 Брянск</p>
+        <p>&copy 1994 - 2022 Брянск</p>
       </footer>
     </main>
   </body>

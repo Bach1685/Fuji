@@ -1,0 +1,18 @@
+.digitization {
+  background: #56bc97;
+}
+
+.digitization-content-text {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(30px * var(--size-coeff));
+  line-height: calc(50px * var(--size-coeff));
+  max-width: calc(1200px * var(--size-coeff));
+  margin: auto;
+  margin-bottom:  calc(80px * var(--size-coeff));
+}
+
+.mail {
+  font-family: "Montserrat-SemiBold";
+  color: rgb(8, 112, 182);
+}
