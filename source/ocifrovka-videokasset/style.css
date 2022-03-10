@@ -16,3 +16,7 @@
   font-family: "Montserrat-SemiBold";
   color: rgb(8, 112, 182);
 }
+
+.film{
+  font-size: calc(27px * var(--size-coeff));
+}
