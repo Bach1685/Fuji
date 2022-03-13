@@ -52,8 +52,8 @@
   width: calc(477px * var(--size-coeff));
   height: calc(95px * var(--size-coeff));
   position: absolute;
-  bottom: calc(15px * var(--size-coeff));
-  left: calc(45px * var(--size-coeff));
+  bottom: calc(25px * var(--size-coeff));
+  left: calc(20px * var(--size-coeff));
   font-family: "MarckScript-Regular";
   font-size: calc(35px * var(--size-coeff));
 }
