@@ -22,7 +22,7 @@
   text-indent: 2em;
   font-family: "Montserrat-Regular";
   font-size: calc(30px * var(--size-coeff));
-  max-width: calc(720px * var(--size-coeff));
+  max-width: calc(920px * var(--size-coeff));
   /* min-height: calc(400px * var(--size-coeff)); */
   line-height: calc(45px * var(--size-coeff));
 
@@ -52,8 +52,8 @@
   width: calc(477px * var(--size-coeff));
   height: calc(95px * var(--size-coeff));
   position: absolute;
-  bottom: calc(15px * var(--size-coeff));
-  left: calc(45px * var(--size-coeff));
+  bottom: calc(25px * var(--size-coeff));
+  left: calc(20px * var(--size-coeff));
   font-family: "MarckScript-Regular";
   font-size: calc(35px * var(--size-coeff));
 }
