@@ -106,10 +106,6 @@ main {
   display: inline-block;
 }
 
-.contacts-text {
-  margin-top: calc(50px * var(--size-coeff));
-}
-
 .contacts-card-img {
   display: block;
 }
