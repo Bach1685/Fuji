@@ -38,6 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   setSizeCoeff();
-
-  setInterval(() => setSizeCoeff(), 200);
+  setInterval(setSizeCoeff, 200);
 });
