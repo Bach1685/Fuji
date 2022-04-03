@@ -1,3 +1,5 @@
+"use strict";
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("burger-img").addEventListener("click", () => {
     document.getElementById("burger").style = "left: 0px;";
