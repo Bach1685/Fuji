@@ -1,42 +1,44 @@
-document.getElementById("burger-img").addEventListener("click", () => {
-  document.getElementById("burger").style = "left: 0px;";
-});
+"use strict";
 
-Array.from(document.getElementsByClassName("close-burger-menu")).forEach(
-  (element) => {
-    element.addEventListener("click", () => {
-      document.getElementById("burger").style = "left: -300px;";
-    });
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("burger-img").addEventListener("click", () => {
+    document.getElementById("burger").style = "left: 0px;";
+  });
+
+  Array.from(document.getElementsByClassName("close-burger-menu")).forEach(
+    (element) => {
+      element.addEventListener("click", () => {
+        document.getElementById("burger").style = "left: -300px;";
+      });
+    }
+  );
+
+  let lastScreenWidth = 0;
+  const startScreenWidth = 1920;
+  const borderScreenWidth = 1280;
+
+  function setSizeCoeff() {
+    let currentScreenWidth = window.innerWidth;
+
+    if (currentScreenWidth == lastScreenWidth) return;
+
+    lastScreenWidth = currentScreenWidth;
+
+    if (currentScreenWidth >= borderScreenWidth) {
+      document.documentElement.style.setProperty(
+        "--size-coeff",
+        String(currentScreenWidth / startScreenWidth)
+      );
+    } else if (currentScreenWidth < 768) {
+      document.documentElement.style.setProperty("--size-coeff", String(0.55));
+    } else {
+      document.documentElement.style.setProperty(
+        "--size-coeff",
+        String(borderScreenWidth / startScreenWidth)
+      );
+    }
   }
-);
 
-const currentScreenWidth = window.innerWidth;
-const startScreenWidth = 1920;
-const borderScreenWidth = 1280;
-if (currentScreenWidth >= borderScreenWidth) {
-  document.documentElement.style.setProperty(
-    "--size-coeff",
-    String(currentScreenWidth / startScreenWidth)
-  );
-} else if (currentScreenWidth < 768) {
-  document.documentElement.style.setProperty("--size-coeff", String(0.55));
-} else {
-  document.documentElement.style.setProperty(
-    "--size-coeff",
-    String(borderScreenWidth / startScreenWidth)
-  );
-}
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//     let burgerStyle = document.getElementById("burger").style;
-//   if (document.body.scrollTop > 50
-//     || document.documentElement.scrollTop > 50) {
-//         burgerStyle.paddingTop = "10px";
-//         burgerStyle.paddingLeft = "10px";
-//   } else {
-//     burgerStyle.paddingTop = "35px";
-//     burgerStyle.paddingLeft = "20px";
-//   }
-// }
+  setSizeCoeff();
+  setInterval(setSizeCoeff, 200);
+});
