@@ -1,0 +1,67 @@
+.immortal-regiment {
+  background: #7ec98a;
+}
+
+.mail {
+  font-family: "Montserrat-SemiBold";
+  color: rgb(14, 85, 117);
+}
+
+.immortal-regiment-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: calc(30px * var(--size-coeff));
+  margin: auto;
+  padding-bottom: calc(50px * var(--size-coeff));
+}
+
+.immortal-regiment-text {
+  max-width: calc(820px * var(--size-coeff));
+}
+
+.immortal-regiment-text-p {
+  text-indent: 2em;
+  font-family: "Montserrat-Regular";
+  font-size: calc(30px * var(--size-coeff));
+  max-width: calc(920px * var(--size-coeff));
+  line-height: calc(45px * var(--size-coeff));
+  padding-bottom: calc(50px * var(--size-coeff));
+}
+
+.immortal-regiment-text-p span {
+  font-family: "Montserrat-SemiBold";
+}
+
+.immortal-regiment-content-bottom-card {
+  width: calc(585px * var(--size-coeff));
+  height: calc(720px * var(--size-coeff));
+  position: relative;
+  transform: rotate(-5deg);
+  margin-top: calc(120px * var(--size-coeff));
+}
+
+.immortal-regiment-card-img {
+  width: calc(585px * var(--size-coeff));
+  /* height: calc(720px * var(--size-coeff)); */
+}
+
+.immortal-regiment-card-text {
+  width: calc(585px * var(--size-coeff));
+  height: calc(95px * var(--size-coeff));
+  position: absolute;
+  bottom: calc(65px * var(--size-coeff));
+  left: calc(110px * var(--size-coeff));
+  font-family: "MarckScript-Regular";
+  font-size: calc(50px * var(--size-coeff));
+}
+
+@media (max-width: 768px) {
+  .immortal-regiment-content {
+    justify-content: center;
+  }
+
+  .immortal-regiment-content-bottom-card {
+    margin-top: calc(0px * var(--size-coeff));
+  }
+}
