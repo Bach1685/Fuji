@@ -154,7 +154,7 @@ header {
 }
 
 .menu {
-  max-width: calc(910px * var(--size-coeff));
+  max-width: calc(1010px * var(--size-coeff));
   height: calc(50px * var(--size-coeff));
   display: flex;
   justify-content: space-between;
