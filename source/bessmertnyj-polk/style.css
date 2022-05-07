@@ -34,8 +34,6 @@
 }
 
 .immortal-regiment-content-bottom-card {
-  width: calc(585px * var(--size-coeff));
-  height: calc(720px * var(--size-coeff));
   position: relative;
   transform: rotate(-5deg);
   margin-top: calc(120px * var(--size-coeff));
@@ -47,7 +45,6 @@
 }
 
 .immortal-regiment-card-text {
-  width: calc(585px * var(--size-coeff));
   height: calc(95px * var(--size-coeff));
   position: absolute;
   bottom: calc(65px * var(--size-coeff));
@@ -56,12 +53,23 @@
   font-size: calc(50px * var(--size-coeff));
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
   .immortal-regiment-content {
     justify-content: center;
   }
 
   .immortal-regiment-content-bottom-card {
     margin-top: calc(0px * var(--size-coeff));
+  }
+}
+
+@media (max-width: 375px) {
+  .immortal-regiment-card-img {
+    width: calc(485px * var(--size-coeff));
+  }
+  .immortal-regiment-card-text {
+    font-size: calc(35px * var(--size-coeff));
+    bottom: calc(25px * var(--size-coeff));
+    left: calc(100px * var(--size-coeff));
   }
 }
